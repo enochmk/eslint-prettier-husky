@@ -8,12 +8,15 @@
     "prepare": "husky install",
     "lint": "eslint . --ext tsx --ext js",
     "prettier:check": "prettier --check",
-    "prettier:fix": "prettier --write ."
+    "prettier:fix": "prettier --write .",
+    "release": "standard-version"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "eslint": "^8.7.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -21,7 +24,8 @@
     "eslint-plugin-jest": "^26.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.1",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "standard-version": "^9.3.2"
   },
   "hooky": {
     "hooks": {
